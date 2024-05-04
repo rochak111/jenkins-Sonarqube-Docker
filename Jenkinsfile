@@ -21,7 +21,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 // Deploy Docker container
-                sh 'docker run -d -p 8080:80 webapp'
+                sh 'docker run -d -p 8082:80 webapp'
             }
         }
     }
